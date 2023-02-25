@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-50">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body >
+
+  <div id="container">
+
+    <div id="intro">
+      <h1> Learn to code by watching others </h1>
+      <p> see how experienced developers solve problems in real-time. watching scripted tutorials. but understanding how developers think is invaluable </p>
+    </div>
+    <div id="form">
+
+      <div >
+        <div >
+
+          <div>
+            <button type="submit" >
+              <span id="price"> Try it free 7 days </span>  then <br> $20/mo. therafter 
+            </button>
+          </div>
+      
+          <form  action="#" method="POST">
+            <input type="hidden" name="remember" value="true">
+            <div >
+      
+              <div>
+                <input id="first-name" name="email" type="text" autocomplete="email" required   placeholder="First Name">
+                <span  id="first-name-warning" class="warning-message">First Name can not be empty</span>
+              </div>
+            </div>
+              <div >
+              <div>
+                <input id="last-name" name="last-name" type="text" autocomplete="current-password" required  placeholder="Last Name">
+                <span id="lastname-warning" class="warning-message">Last Name can not be empty</span>
+              </div>
+              </div>
+              <div >
+              <div>
+                <input id="email-address" name="email" type="email" autocomplete="email" required  placeholder="Email address">
+                <span id="email-warning" class="warning-message">Looks like this is not an email</span>
+              </div>
+              </div>
+              <div >
+              <div>
+                <input id="password" name="password" type="password" autocomplete="current-password" required  placeholder="Password">
+                <span id="password-warning" class="warning-message">Password can not be empty</span>
+              </div>
+            </div>
+      
+      
+            <div>
+              <button type="submit" id="submit">
+                CLAIM YOUR FREE TRIAL
+              </button>
+            </div>
+      
+                <div>
+            <p class="terms">
+              By clicking the button, you are agreeing to our 
+              <a href="#" class="red">Terms of Services</a>
+            </p>
+          </div>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  
+  
+
+ <script src="app.js"></script>
+</body>
+</html>
