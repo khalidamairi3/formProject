@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+body {
+  background-repeat: no-repeat, repeat;
+  background-color: red;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("images/bg-intro-desktop.png");
+}
+
+#container{
+  display: grid;
+  margin: 5% 5%;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+#intro{
+  color: white;
+  padding: 9.5%;
+  text-align: center;
+  justify-items: center;
+}
+
+#intro h1{
+  font-size: 48px;
+
+}
+
+.warning-message{
+
+  font-size: 18px;
+}
+
+
+#intro p{
+  font-size: 20px;
+}
+input{
+        
+  width: 85%;
+  height: 35px;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  border-radius: 10px;
+  padding: 3%;
+  border-color: gainsboro;
+
+}
+
+.error{
+    
+  background: url(images/icon-error.svg) no-repeat scroll 95% 45%;
+  border-color: red;
+
+
+}
+.error::placeholder {
+  color: red;
+}
+
+.warning-message{
+  color: red;
+  display: none;
+  font-style: italic;
+  text-align: end;
+  font-size: 12px;
+  width: 95%;
+}
+
+form{
+  margin-top: 3vh;
+  background-color: white;
+  padding: 5%;
+  text-align: center;
+  border-radius: 3%;
+  width: 65%;
+  
+}
+
+#price{
+  font-weight: bold;
+}
+
+button{
+
+  width: 75%;
+  padding: 2.5%;
+  font-size: 20px;
+  margin-top: 3vh;
+  background-color: indigo;
+  text-align: center;
+  color: white;
+  border-radius: 8px ;
+  border: none;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+}
+
+#submit{
+  width: 92%;
+  background-color: green;
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.red{
+  color: red;
+  text-decoration: none;
+}
+
+.terms{
+  color: gray;
+  font-size: 16px;
+}
+
+
+  @media only screen and (max-width: 768px) {
+    body {
+        background-image: url("images/bg-intro-mobile.png");
+      }
+    
+    
+      #intro h1{
+        font-size: 24px;
+    
+      }
+
+      #container{
+        grid-template-columns: 1fr;
+
+      }
+    
+      #intro p{
+        font-size: 14px;
+      }
+    
+    
+      form{
+        width: 90%;      
+      }
+    
+    
+      button{
+
+        width: 100%;
+        padding: 8%;
+        font-size: 18px;
+    
+      }
+    
+    
+  }
+
+
